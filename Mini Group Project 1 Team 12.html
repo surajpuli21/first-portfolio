@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.335">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Levent Bulut">
+
+<title>Mini Group Project 1</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<script src="Mini Group Project 1 Team X_files/libs/clipboard/clipboard.min.js"></script>
+<script src="Mini Group Project 1 Team X_files/libs/quarto-html/quarto.js"></script>
+<script src="Mini Group Project 1 Team X_files/libs/quarto-html/popper.min.js"></script>
+<script src="Mini Group Project 1 Team X_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="Mini Group Project 1 Team X_files/libs/quarto-html/anchor.min.js"></script>
+<link href="Mini Group Project 1 Team X_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="Mini Group Project 1 Team X_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="Mini Group Project 1 Team X_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="Mini Group Project 1 Team X_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="Mini Group Project 1 Team X_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Mini Group Project 1</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Levent Bulut </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="business-problem" class="level1">
+<h1>Business Problem</h1>
+<p>In this group project, you will work with analysts’ forecast data of earning per share (EPS) provided by Wharton Research Data Services (WRDS). Institutional Brokers’ Estimate System (I/B/E/S) provides historical data on certain financial indicators collected from thousands of individual analysts working in more than 3,000 broker houses.</p>
+<ul>
+<li><p><strong>TICKER:</strong> A unique identifier assigned to each security. In this group project, you will only model “NFLX” ticker.</p></li>
+<li><p><strong>CNAME:</strong> Company name</p></li>
+<li><p><strong>ACTDATS:</strong> The Activation date: It is the date when the analyst forecast became effective within the IBES database.</p></li>
+<li><p><strong>ESTIMATOR:</strong> Sellside institution (mostly broker house). It is just the broker.</p></li>
+<li><p><strong>ANALYS:</strong> The person who makes the forecast and work for sellside institution. Estimators and analysts are represented by codes to hide their real names.</p></li>
+<li><p><strong>FPI:</strong> Forecast Period Indicator: The forecasting period. 6: Next Fiscal Quarter 1: Next Fiscal Year</p></li>
+<li><p><strong>MEASURE</strong>: The variable being estimated. We have data for earning per share (EPS)</p></li>
+<li><p><strong>VALUE:</strong> The forecasted value of EPS</p></li>
+<li><p><strong>FPEDATS</strong>: The Forecast Period End Date: It is the ending date of the fiscal period to which the estimate applies. For the majority of companies, the FPEDATS date is December 31st of that year.</p></li>
+<li><p><strong>REVDATS:</strong> The Review Date: It is the most recent date on which IBES called the analyst and verified that particular estimate as still valid for that analyst. If an analyst confirms that a previous estimate is still valid, the original database record for that estimate is retained and only the REVDATS variable is updated. If an analyst changes their estimate for a given company, a new record is entered in the database with a new ANNDATS. The old record of the analyst (containing the previous estimate) is retained in the database.</p></li>
+<li><p><strong>REVTIMS</strong>: Time-stamp of REVDATS</p></li>
+<li><p><strong>ANNDATS</strong>: The Announce date: It is the date on which the analyst first made that particular estimate.</p></li>
+<li><p><strong>ANNTIMS</strong>: Time-stamp of ANNDATS</p></li>
+<li><p><strong>ACTUAL</strong>: The realized EPS, the true EPS value.</p></li>
+<li><p><strong>ANNDATS_ACT</strong>: The Announced date of Actual EPS: The actual EPS value is announced by the company at this date.</p></li>
+<li><p><strong>ANNTIMS_ACT</strong>: The time-stamp of ANNDATS_ACT</p></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Attaching package: 'dplyr'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following objects are masked from 'package:stats':
+
+    filter, lag</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>NFLX<span class="ot">&lt;-</span><span class="fu">read.csv</span>(<span class="st">"NFLX.csv"</span>, <span class="at">header=</span><span class="cn">TRUE</span>)</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(NFLX)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1] "TICKER"      "CNAME"       "ACTDATS"     "ESTIMATOR"   "ANALYS"     
+ [6] "FPI"         "MEASURE"     "VALUE"       "FPEDATS"     "REVDATS"    
+[11] "REVTIMS"     "ANNDATS"     "ANNTIMS"     "ACTUAL"      "ANNDATS_ACT"
+[16] "ANNTIMS_ACT"</code></pre>
+</div>
+</div>
+<section id="how-to-read-the-data" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-read-the-data">How to read the data</h2>
+<p><strong>The first row in NFLX data set</strong>: On 09‐Aug-2002 (ANNDATS), analyst 6749 (ANALYS) at Estimator 1872 (ESTIMATOR) predicts that the EPS (MEASURE) for NETFLIX INC. (CNAME) with a ticker of NFLX (TICKER) with forecast period ending 30‐Sep-2002 (FPEDATS) is -$0.0086 (VALUE). This estimates was entered into the database on 12‐Aug-2002 (ACTDATS). On 17-Oct-2002 (ANNDATS_ACT), NETFLIX INC. announced an actual EPS of $7e-04 ($0.0007) (ACTUAL) for this quarter (FPI=6).</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(NFLX,<span class="at">n=</span><span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  TICKER        CNAME  ACTDATS ESTIMATOR ANALYS FPI MEASURE   VALUE  FPEDATS
+1   NFLX NETFLIX INC. 20020812      1872   6749   6     EPS -0.0086 20020930
+   REVDATS  REVTIMS  ANNDATS  ANNTIMS ACTUAL ANNDATS_ACT ANNTIMS_ACT
+1 20021018 17:02:56 20020809 14:00:00 -7e-04    20021017    17:04:00</code></pre>
+</div>
+</div>
+<p>Missing Values:</p>
+<section id="task-1a" class="level4">
+<h4 class="anchored" data-anchor-id="task-1a">TASK 1A:</h4>
+<p>Check to see the missing values in NFLX dataset and calculate the percent missing for each variable and list your findings below.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Finding the percentage of missing values for each variable</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>missing_percent <span class="ot">&lt;-</span> NFLX <span class="sc">%&gt;%</span> </span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise_all</span>(<span class="sc">~</span><span class="fu">mean</span>(<span class="fu">is.na</span>(.))<span class="sc">*</span><span class="dv">100</span>)</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Printing the results</span></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(missing_percent)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  TICKER CNAME ACTDATS ESTIMATOR ANALYS FPI MEASURE VALUE FPEDATS REVDATS
+1      0     0       0         0      0   0       0     0       0       0
+  REVTIMS ANNDATS ANNTIMS   ACTUAL ANNDATS_ACT ANNTIMS_ACT
+1       0       0       0 4.115304    4.115304           0</code></pre>
+</div>
+</div>
+</section>
+<section id="task-1b" class="level4">
+<h4 class="anchored" data-anchor-id="task-1b">TASK 1B:</h4>
+<p>After completing the following data manipulations on NFLX, save your reduced dataset as NFLX1.</p>
+<ul>
+<li><p>Drop rows from the data set when a variable has a missing value</p></li>
+<li><p>Drop rows from the data set the quarterly forecasts (drop FPI=6)</p></li>
+<li><p>Declare TICKER, CNAME, ESTIMATOR , ANALYS, FPI , and MEASURE variables as factor</p></li>
+<li><p>Declare ACTDATS, FPEDATS , ANNDATS, REVDATS, ANNDATS_ACT as time variable.</p></li>
+<li><p>Drop ANNTIMS_ACT, ANNTIMS , and REVTIMS</p></li>
+<li><p>Create a new column named YEAR that captures the year in FPEDATS</p></li>
+<li><p>Name your reduced dataset as NFLX1</p></li>
+<li><p>Print out data structure and the summary of NFLX1</p></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load necessary packages</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lubridate)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Attaching package: 'lubridate'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following objects are masked from 'package:base':
+
+    date, intersect, setdiff, union</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Drop rows from the data set when a variable has a missing value</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>NFLX1 <span class="ot">&lt;-</span> <span class="fu">na.omit</span>(NFLX)</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Drop quarterly forecasts</span></span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>NFLX1 <span class="ot">&lt;-</span> <span class="fu">filter</span>(NFLX1, FPI <span class="sc">!=</span> <span class="dv">6</span>)</span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Declare variables as factors</span></span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a>NFLX1<span class="sc">$</span>TICKER <span class="ot">&lt;-</span> <span class="fu">as.factor</span>(NFLX1<span class="sc">$</span>TICKER)</span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a>NFLX1<span class="sc">$</span>CNAME <span class="ot">&lt;-</span> <span class="fu">as.factor</span>(NFLX1<span class="sc">$</span>CNAME)</span>
+<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a>NFLX1<span class="sc">$</span>ESTIMATOR <span class="ot">&lt;-</span> <span class="fu">as.factor</span>(NFLX1<span class="sc">$</span>ESTIMATOR)</span>
+<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a>NFLX1<span class="sc">$</span>ANALYS <span class="ot">&lt;-</span> <span class="fu">as.factor</span>(NFLX1<span class="sc">$</span>ANALYS)</span>
+<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a>NFLX1<span class="sc">$</span>FPI <span class="ot">&lt;-</span> <span class="fu">as.factor</span>(NFLX1<span class="sc">$</span>FPI)</span>
+<span id="cb14-13"><a href="#cb14-13" aria-hidden="true" tabindex="-1"></a>NFLX1<span class="sc">$</span>MEASURE <span class="ot">&lt;-</span> <span class="fu">as.factor</span>(NFLX1<span class="sc">$</span>MEASURE)</span>
+<span id="cb14-14"><a href="#cb14-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-15"><a href="#cb14-15" aria-hidden="true" tabindex="-1"></a><span class="co"># Declare time variables</span></span>
+<span id="cb14-16"><a href="#cb14-16" aria-hidden="true" tabindex="-1"></a>NFLX1 <span class="ot">&lt;-</span> NFLX1 <span class="sc">%&gt;%</span></span>
+<span id="cb14-17"><a href="#cb14-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">ACTDATS  =</span> lubridate<span class="sc">::</span><span class="fu">ymd</span>(ACTDATS))<span class="sc">%&gt;%</span></span>
+<span id="cb14-18"><a href="#cb14-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">FPEDATS  =</span> lubridate<span class="sc">::</span><span class="fu">ymd</span>(FPEDATS ))<span class="sc">%&gt;%</span></span>
+<span id="cb14-19"><a href="#cb14-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">ANNDATS  =</span> lubridate<span class="sc">::</span><span class="fu">ymd</span>(ANNDATS  ))<span class="sc">%&gt;%</span></span>
+<span id="cb14-20"><a href="#cb14-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">REVDATS  =</span> lubridate<span class="sc">::</span><span class="fu">ymd</span>(REVDATS   ))<span class="sc">%&gt;%</span></span>
+<span id="cb14-21"><a href="#cb14-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">ANNDATS_ACT  =</span> lubridate<span class="sc">::</span><span class="fu">ymd</span>(ANNDATS_ACT    ))</span>
+<span id="cb14-22"><a href="#cb14-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-23"><a href="#cb14-23" aria-hidden="true" tabindex="-1"></a><span class="co"># Drop unnecessary variables</span></span>
+<span id="cb14-24"><a href="#cb14-24" aria-hidden="true" tabindex="-1"></a>NFLX1 <span class="ot">&lt;-</span> <span class="fu">select</span>(NFLX1, <span class="sc">-</span><span class="fu">c</span>(ANNTIMS_ACT, ANNTIMS, REVTIMS))</span>
+<span id="cb14-25"><a href="#cb14-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-26"><a href="#cb14-26" aria-hidden="true" tabindex="-1"></a><span class="co"># Create new column for year in FPEDATS</span></span>
+<span id="cb14-27"><a href="#cb14-27" aria-hidden="true" tabindex="-1"></a>NFLX1<span class="sc">$</span>YEAR <span class="ot">&lt;-</span> <span class="fu">year</span>(NFLX1<span class="sc">$</span>FPEDATS)</span>
+<span id="cb14-28"><a href="#cb14-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-29"><a href="#cb14-29" aria-hidden="true" tabindex="-1"></a><span class="co"># Print out data structure and the summary of NFLX1</span></span>
+<span id="cb14-30"><a href="#cb14-30" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(NFLX1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>'data.frame':   2603 obs. of  14 variables:
+ $ TICKER     : Factor w/ 1 level "NFLX": 1 1 1 1 1 1 1 1 1 1 ...
+ $ CNAME      : Factor w/ 1 level "NETFLIX INC.": 1 1 1 1 1 1 1 1 1 1 ...
+ $ ACTDATS    : Date, format: "2002-08-05" "2002-12-02" ...
+ $ ESTIMATOR  : Factor w/ 109 levels "11","28","29",..: 16 53 49 22 53 49 57 22 49 30 ...
+ $ ANALYS     : Factor w/ 144 levels "1047","1324",..: 44 47 5 27 47 5 55 27 5 51 ...
+ $ FPI        : Factor w/ 1 level "1": 1 1 1 1 1 1 1 1 1 1 ...
+ $ MEASURE    : Factor w/ 1 level "EPS": 1 1 1 1 1 1 1 1 1 1 ...
+ $ VALUE      : num  -0.025 -0.0321 -0.0207 -0.0179 -0.0286 -0.0136 -0.0164 -0.0071 0.0107 0.0129 ...
+ $ FPEDATS    : Date, format: "2002-12-31" "2002-12-31" ...
+ $ REVDATS    : Date, format: "2002-11-29" "2002-12-02" ...
+ $ ANNDATS    : Date, format: "2002-08-05" "2002-12-02" ...
+ $ ACTUAL     : num  -0.005 -0.005 -0.005 -0.005 -0.005 -0.005 -0.005 0.0393 0.0393 0.0393 ...
+ $ ANNDATS_ACT: Date, format: "2003-01-15" "2003-01-15" ...
+ $ YEAR       : num  2002 2002 2002 2002 2002 ...
+ - attr(*, "na.action")= 'omit' Named int [1:217] 5057 5058 5059 5060 5061 5062 5063 5064 5065 5066 ...
+  ..- attr(*, "names")= chr [1:217] "5057" "5058" "5059" "5060" ...</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(NFLX1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  TICKER              CNAME         ACTDATS             ESTIMATOR   
+ NFLX:2603   NETFLIX INC.:2603   Min.   :2002-08-05   100    :  97  
+                                 1st Qu.:2010-10-21   220    :  88  
+                                 Median :2014-10-09   873    :  87  
+                                 Mean   :2014-01-26   192    :  86  
+                                 3rd Qu.:2018-01-22   930    :  76  
+                                 Max.   :2021-01-19   210    :  70  
+                                                      (Other):2099  
+     ANALYS     FPI      MEASURE        VALUE           FPEDATS          
+ 72088  :  93   1:2603   EPS:2603   Min.   :-0.150   Min.   :2002-12-31  
+ 71755  :  82                       1st Qu.: 0.190   1st Qu.:2010-12-31  
+ 78488  :  79                       Median : 0.430   Median :2014-12-31  
+ 77748  :  70                       Mean   : 1.339   Mean   :2014-08-01  
+ 22953  :  67                       3rd Qu.: 2.015   3rd Qu.:2018-12-31  
+ 80523  :  64                       Max.   : 7.670   Max.   :2020-12-31  
+ (Other):2148                                                            
+    REVDATS              ANNDATS               ACTUAL      
+ Min.   :2002-11-29   Min.   :2002-08-05   Min.   :-0.005  
+ 1st Qu.:2011-01-19   1st Qu.:2010-10-21   1st Qu.: 0.250  
+ Median :2014-10-13   Median :2014-10-09   Median : 0.430  
+ Mean   :2014-02-27   Mean   :2014-01-26   Mean   : 1.384  
+ 3rd Qu.:2018-01-22   3rd Qu.:2018-01-22   3rd Qu.: 2.680  
+ Max.   :2021-01-19   Max.   :2021-01-19   Max.   : 6.080  
+                                                           
+  ANNDATS_ACT              YEAR     
+ Min.   :2003-01-15   Min.   :2002  
+ 1st Qu.:2011-01-26   1st Qu.:2010  
+ Median :2015-01-20   Median :2014  
+ Mean   :2014-08-23   Mean   :2014  
+ 3rd Qu.:2019-01-17   3rd Qu.:2018  
+ Max.   :2021-01-19   Max.   :2020  
+                                    </code></pre>
+</div>
+</div>
+</section>
+<section id="task-2" class="level3">
+<h3 class="anchored" data-anchor-id="task-2">TASK 2</h3>
+<ul>
+<li><p>Calculate the total number of unique analysts in <strong>NFLX1</strong> dataset that provide forecasts each year and name your R object as <strong>NumberAnalyst</strong> and list them</p></li>
+<li><p>Calculate the total number of unique brokerage houses (ESTIMATOR) in <strong>NFLX1</strong> dataset that provide forecasts each year and name your R object as <strong>NumberBrokerage</strong> and list them</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a new column for year</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>NFLX1<span class="sc">$</span>year <span class="ot">&lt;-</span> lubridate<span class="sc">::</span><span class="fu">year</span>(NFLX1<span class="sc">$</span>ANNDATS)</span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate the total number of unique analysts each year</span></span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>NumberAnalyst <span class="ot">&lt;-</span> NFLX1 <span class="sc">%&gt;%</span></span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(year) <span class="sc">%&gt;%</span></span>
+<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">unique_analysts =</span> <span class="fu">n_distinct</span>(ANALYS)) <span class="sc">%&gt;%</span></span>
+<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ungroup</span>()</span>
+<span id="cb18-9"><a href="#cb18-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-10"><a href="#cb18-10" aria-hidden="true" tabindex="-1"></a><span class="co"># List the total number of unique analysts each year</span></span>
+<span id="cb18-11"><a href="#cb18-11" aria-hidden="true" tabindex="-1"></a>NumberAnalyst</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 20 × 2
+    year unique_analysts
+   &lt;dbl&gt;           &lt;int&gt;
+ 1  2002               4
+ 2  2003               9
+ 3  2004              17
+ 4  2005              17
+ 5  2006              19
+ 6  2007              20
+ 7  2008              19
+ 8  2009              32
+ 9  2010              37
+10  2011              40
+11  2012              37
+12  2013              39
+13  2014              45
+14  2015              47
+15  2016              46
+16  2017              47
+17  2018              56
+18  2019              46
+19  2020              49
+20  2021              14</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate the total number of unique brokerage houses each year</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>NumberBrokerage <span class="ot">&lt;-</span> NFLX1 <span class="sc">%&gt;%</span></span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(year) <span class="sc">%&gt;%</span></span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">unique_brokerage =</span> <span class="fu">n_distinct</span>(ESTIMATOR)) <span class="sc">%&gt;%</span></span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ungroup</span>()</span>
+<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a><span class="co"># List the total number of unique brokerage houses each year</span></span>
+<span id="cb20-8"><a href="#cb20-8" aria-hidden="true" tabindex="-1"></a>NumberBrokerage</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 20 × 2
+    year unique_brokerage
+   &lt;dbl&gt;            &lt;int&gt;
+ 1  2002                4
+ 2  2003                8
+ 3  2004               16
+ 4  2005               17
+ 5  2006               18
+ 6  2007               18
+ 7  2008               20
+ 8  2009               31
+ 9  2010               38
+10  2011               35
+11  2012               35
+12  2013               40
+13  2014               40
+14  2015               45
+15  2016               45
+16  2017               48
+17  2018               54
+18  2019               43
+19  2020               44
+20  2021               14</code></pre>
+</div>
+</div></li>
+</ul>
+</section>
+<section id="task-3" class="level3">
+<h3 class="anchored" data-anchor-id="task-3">TASK 3</h3>
+<p>It is quite possible that an analyst makes multiple forecasts throughout the year for the same fiscal period. Remove observations from <strong>NFLX1</strong> if an analyst has multiple predictions for the same year and keep the last one. Name your new dataset as <strong>NFLX2.</strong> . This step is crucial for successful execution of the following tasks. Print the dimension of NFLX2.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Group by ANALYS, FPI, and FPEDATS, and keep the last observation for each group</span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>NFLX2 <span class="ot">&lt;-</span> NFLX1 <span class="sc">%&gt;%</span></span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(ANALYS, FPI, FPEDATS) <span class="sc">%&gt;%</span></span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">slice_tail</span>(<span class="at">n =</span> <span class="dv">1</span>)</span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Print the dimension of NFLX2</span></span>
+<span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>(NFLX2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 637  15</code></pre>
+</div>
+</div>
+</section>
+<section id="task-4" class="level3">
+<h3 class="anchored" data-anchor-id="task-4">TASK 4</h3>
+<p>For each year in <strong>NFLX2</strong>, calculate the forecast performance of each analyst from last year and save it in a new column <strong>past_accuracy</strong>. In the calculation of forecast performance, you can use the MEASURE-ACTUAL as the forecast accuracy measure. This action will create some missing values and this is perfectly fine. Print the summary of past_accuracy column</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co"># summary(NFLX2$past_accuracy)</span></span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>NFLX2 <span class="ot">&lt;-</span> NFLX2 <span class="sc">%&gt;%</span></span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(year) <span class="sc">%&gt;%</span></span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">past_accuracy =</span> VALUE <span class="sc">-</span> ACTUAL) <span class="sc">%&gt;%</span></span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ungroup</span>()</span>
+<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(NFLX2<span class="sc">$</span>past_accuracy)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>    Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+-2.49000 -0.04140 -0.02000 -0.06057  0.00000  1.06300 </code></pre>
+</div>
+</div>
+</section>
+<section id="task-5" class="level3">
+<h3 class="anchored" data-anchor-id="task-5">TASK 5</h3>
+<p>The longer the forecast horizon, the higher the uncertainty associated with EPS forecast. To control for this fact, create a new column in <strong>NFLX2</strong> called <strong>horizon</strong> that captures the forecast horizon (ANNDATS_ACT- ANNDATS) for each analyst. Print the unique number of horizon values.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a horizon column to capture all forecast horizons for each analyst</span></span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>NFLX2 <span class="ot">&lt;-</span> NFLX2 <span class="sc">%&gt;%</span> </span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">horizon=</span>ANNDATS_ACT<span class="sc">-</span> ANNDATS)</span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Count of unique numbers of horizon values.</span></span>
+<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a><span class="fu">unique</span>(<span class="fu">table</span>(NFLX2<span class="sc">$</span>horizon))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1]  4  6  2  7  5 12 14  1  3  9 11 42 90 23 85 61 13 10 19</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Preform check</span></span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(NFLX2<span class="sc">$</span>horizon, <span class="at">n=</span><span class="dv">4</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Time differences in days
+[1]  92 363  97  96</code></pre>
+</div>
+</div>
+</section>
+<section id="task-6" class="level3">
+<h3 class="anchored" data-anchor-id="task-6">TASK 6</h3>
+<p>We assume that if an analyst is monitoring a company for a long period of time, he/she is expected to make more informed predictions. Create a new column in NFLX2 called <strong>experience</strong> that counts the cumulative number of years the analyst monitor (have predictions) the company. Print the summary of experience column.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Create a new column in NFLX2 called experience that counts the cumulative number of years the analyst monitor (have predictions) the company.</span></span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>NFLX2 <span class="ot">&lt;-</span> NFLX2 <span class="sc">%&gt;%</span></span>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(ANALYS) <span class="sc">%&gt;%</span></span>
+<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">experience =</span> <span class="fu">cumsum</span>(<span class="fu">c</span>(<span class="dv">0</span>, <span class="fu">diff</span>(<span class="fu">year</span>(ANNDATS_ACT))) <span class="sc">&gt;</span> <span class="dv">0</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ungroup</span>()</span>
+<span id="cb30-6"><a href="#cb30-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-7"><a href="#cb30-7" aria-hidden="true" tabindex="-1"></a><span class="co">#Print the summary of experience column.</span></span>
+<span id="cb30-8"><a href="#cb30-8" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(NFLX2<span class="sc">$</span>experience)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  0.000   1.000   2.000   3.206   5.000  16.000 </code></pre>
+</div>
+</div>
+</section>
+<section id="task-7" class="level3">
+<h3 class="anchored" data-anchor-id="task-7">TASK 7</h3>
+<p>If a brokerage house have many analysts making predictions for the same company, it can be a sign of more resources allocated for company analysis. Create a new column in NFLX2 called <strong>size</strong> that counts the total number of analyst employed per year by the brokerage house (ESTIMATOR). Print the frequencies for size variable.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a new column in NFLX2 called size that counts the total number of analysts employed per year by the broker house.</span></span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a>NFLX2 <span class="ot">&lt;-</span> NFLX2 <span class="sc">%&gt;%</span></span>
+<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(ESTIMATOR, year) <span class="sc">%&gt;%</span></span>
+<span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">size =</span> <span class="fu">n_distinct</span>(ANALYS)) <span class="sc">%&gt;%</span></span>
+<span id="cb32-5"><a href="#cb32-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ungroup</span>()</span>
+<span id="cb32-6"><a href="#cb32-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-7"><a href="#cb32-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Print the frequencies for the size variable</span></span>
+<span id="cb32-8"><a href="#cb32-8" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(NFLX2<span class="sc">$</span>size)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+  1   2   3 
+570  60   7 </code></pre>
+</div>
+</div>
+</section>
+<section id="task-8" class="level3">
+<h3 class="anchored" data-anchor-id="task-8">TASK 8</h3>
+<p>As a benchmark, take the average forecasts by all analysts as your best forecast of the EPS for that year and store your forecast of APPL EPS (ACTUAL) for each year in a data frame named as <strong>consensus_forecast</strong>. Print the consensus_forecast values.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a new data frame that takes the average forecasts of all analysts of the EPS for that year</span></span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>consensus_forecast <span class="ot">&lt;-</span> NFLX2 <span class="sc">%&gt;%</span></span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(year) <span class="sc">%&gt;%</span></span>
+<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">ACTUAL =</span> <span class="fu">mean</span>(ACTUAL)) <span class="sc">%&gt;%</span></span>
+<span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ungroup</span>()</span>
+<span id="cb34-6"><a href="#cb34-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-7"><a href="#cb34-7" aria-hidden="true" tabindex="-1"></a><span class="co"># print the consensus_forecast data frame</span></span>
+<span id="cb34-8"><a href="#cb34-8" aria-hidden="true" tabindex="-1"></a>consensus_forecast</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 20 × 2
+    year  ACTUAL
+   &lt;dbl&gt;   &lt;dbl&gt;
+ 1  2002 -0.005 
+ 2  2003  0.0304
+ 3  2004  0.0791
+ 4  2005  0.0624
+ 5  2006  0.0990
+ 6  2007  0.132 
+ 7  2008  0.189 
+ 8  2009  0.269 
+ 9  2010  0.405 
+10  2011  0.599 
+11  2012  0.112 
+12  2013  0.248 
+13  2014  0.498 
+14  2015  0.280 
+15  2016  0.405 
+16  2017  1.12  
+17  2018  2.49  
+18  2019  3.78  
+19  2020  5.61  
+20  2021  6.08  </code></pre>
+</div>
+</div>
+</section>
+<section id="task-9" class="level3">
+<h3 class="anchored" data-anchor-id="task-9">TASK 9</h3>
+<p>For each year, calculate the <strong>forecast_error</strong> as the difference between the actual EPS and the <strong>consensus_forecast</strong> and show it in your answer.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="co"># merge NFLX2 with consensus_forecast</span></span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a>merged_data <span class="ot">&lt;-</span> <span class="fu">merge</span>(NFLX2, consensus_forecast, <span class="at">by =</span> <span class="st">"year"</span>)</span>
+<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb36-4"><a href="#cb36-4" aria-hidden="true" tabindex="-1"></a><span class="co"># calculate forecast_error</span></span>
+<span id="cb36-5"><a href="#cb36-5" aria-hidden="true" tabindex="-1"></a>merged_data<span class="sc">$</span>forecast_error <span class="ot">&lt;-</span> merged_data<span class="sc">$</span>ACTUAL.x <span class="sc">-</span> merged_data<span class="sc">$</span>ACTUAL.y</span>
+<span id="cb36-6"><a href="#cb36-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb36-7"><a href="#cb36-7" aria-hidden="true" tabindex="-1"></a><span class="co"># display forecast_error for each year</span></span>
+<span id="cb36-8"><a href="#cb36-8" aria-hidden="true" tabindex="-1"></a>forecast_error <span class="ot">&lt;-</span> merged_data <span class="sc">%&gt;%</span></span>
+<span id="cb36-9"><a href="#cb36-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(year) <span class="sc">%&gt;%</span></span>
+<span id="cb36-10"><a href="#cb36-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">forecast_error =</span> <span class="fu">mean</span>(forecast_error))</span>
+<span id="cb36-11"><a href="#cb36-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb36-12"><a href="#cb36-12" aria-hidden="true" tabindex="-1"></a>forecast_error</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 20 × 2
+    year forecast_error
+   &lt;dbl&gt;          &lt;dbl&gt;
+ 1  2002       0       
+ 2  2003       0       
+ 3  2004       1.54e-18
+ 4  2005       7.71e-19
+ 5  2006       4.08e-18
+ 6  2007       1.16e-17
+ 7  2008       0       
+ 8  2009       6.73e-18
+ 9  2010       1.39e-17
+10  2011       9.00e-18
+11  2012       1.04e-17
+12  2013      -2.77e-18
+13  2014       0       
+14  2015       1.93e-17
+15  2016      -7.57e-18
+16  2017       4.08e-17
+17  2018      -1.28e-16
+18  2019      -1.06e-16
+19  2020       9.65e-17
+20  2021       0       </code></pre>
+</div>
+</div>
+</section>
+<section id="task-10" class="level3">
+<h3 class="anchored" data-anchor-id="task-10">TASK 10:</h3>
+<p>Create a new dataset called NFLX3 that takes the size, actual, experience, horizon, and <strong>past_accuracy</strong> variables from NFLX2 and aggregate them to yearly averages. Show the the summary of NFLX3 dataset.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a new data frame that takes size, actual, experience, horizon, and past_accuracy variables from NFLX2 and aggregated to yearly averages.</span></span>
+<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a>NFLX3 <span class="ot">&lt;-</span> NFLX2 <span class="sc">%&gt;%</span></span>
+<span id="cb38-3"><a href="#cb38-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(year) <span class="sc">%&gt;%</span></span>
+<span id="cb38-4"><a href="#cb38-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">avg_size =</span> <span class="fu">mean</span>(size),</span>
+<span id="cb38-5"><a href="#cb38-5" aria-hidden="true" tabindex="-1"></a>            <span class="at">avg_actual =</span> <span class="fu">mean</span>(ACTUAL),</span>
+<span id="cb38-6"><a href="#cb38-6" aria-hidden="true" tabindex="-1"></a>            <span class="at">avg_experience =</span> <span class="fu">mean</span>(experience),</span>
+<span id="cb38-7"><a href="#cb38-7" aria-hidden="true" tabindex="-1"></a>            <span class="at">avg_horizon =</span> <span class="fu">mean</span>(horizon),</span>
+<span id="cb38-8"><a href="#cb38-8" aria-hidden="true" tabindex="-1"></a>            <span class="at">avg_past_accuracy =</span> <span class="fu">mean</span>(past_accuracy)) <span class="sc">%&gt;%</span></span>
+<span id="cb38-9"><a href="#cb38-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ungroup</span>()</span>
+<span id="cb38-10"><a href="#cb38-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-11"><a href="#cb38-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Summarize the new data frame</span></span>
+<span id="cb38-12"><a href="#cb38-12" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(NFLX3)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>      year         avg_size       avg_actual      avg_experience 
+ Min.   :2002   Min.   :1.000   Min.   :-0.0050   Min.   :0.000  
+ 1st Qu.:2007   1st Qu.:1.045   1st Qu.: 0.1090   1st Qu.:1.739  
+ Median :2012   Median :1.095   Median : 0.2744   Median :2.679  
+ Mean   :2012   Mean   :1.112   Mean   : 1.1242   Mean   :2.701  
+ 3rd Qu.:2016   3rd Qu.:1.142   3rd Qu.: 0.7280   3rd Qu.:3.919  
+ Max.   :2021   Max.   :1.324   Max.   : 6.0800   Max.   :5.130  
+ avg_horizon       avg_past_accuracy  
+ Length:20         Min.   :-0.653109  
+ Class :difftime   1st Qu.:-0.019894  
+ Mode  :numeric    Median :-0.014484  
+                   Mean   :-0.037858  
+                   3rd Qu.:-0.005609  
+                   Max.   : 0.221643  </code></pre>
+</div>
+</div>
+</section>
+<section id="task-11" class="level3">
+<h3 class="anchored" data-anchor-id="task-11"><strong>TASK 11:</strong></h3>
+<p>By using NFLX3, consensus_forecast, NumberAnalyst , and NumberBrokerage, look at the correlation matrix, scatter plots and some other exploratory data analysis methods to explore possible connection between actual EPS value and other variables. This is an open ended question.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(corrplot)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>corrplot 0.92 loaded</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Merge the data</span></span>
+<span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a>merged_data <span class="ot">&lt;-</span> <span class="fu">merge</span>(consensus_forecast, NumberAnalyst, <span class="at">by =</span> <span class="st">"year"</span>)</span>
+<span id="cb42-3"><a href="#cb42-3" aria-hidden="true" tabindex="-1"></a>merged_data <span class="ot">&lt;-</span> <span class="fu">merge</span>(merged_data, NumberBrokerage, <span class="at">by =</span> <span class="st">"year"</span>)</span>
+<span id="cb42-4"><a href="#cb42-4" aria-hidden="true" tabindex="-1"></a>merged_data <span class="ot">&lt;-</span> <span class="fu">merge</span>(merged_data, NFLX3, <span class="at">by =</span> <span class="st">"year"</span>)</span>
+<span id="cb42-5"><a href="#cb42-5" aria-hidden="true" tabindex="-1"></a>merged_data<span class="sc">$</span>avg_horizon <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>((merged_data<span class="sc">$</span>avg_horizon))</span>
+<span id="cb42-6"><a href="#cb42-6" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(merged_data)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>'data.frame':   20 obs. of  9 variables:
+ $ year             : num  2002 2003 2004 2005 2006 ...
+ $ ACTUAL           : num  -0.005 0.0304 0.0791 0.0624 0.099 ...
+ $ unique_analysts  : int  4 9 17 17 19 20 19 32 37 40 ...
+ $ unique_brokerage : int  4 8 16 17 18 18 20 31 38 35 ...
+ $ avg_size         : num  1 1.3 1.11 1 1.12 ...
+ $ avg_actual       : num  -0.005 0.0304 0.0791 0.0624 0.099 ...
+ $ avg_experience   : num  0 0.2 0.611 1.278 1.706 ...
+ $ avg_horizon      : num  83 72.4 120.1 124.4 105.4 ...
+ $ avg_past_accuracy: num  -0.01883 -0.00552 -0.00564 -0.01412 -0.01149 ...</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Compute correlation matrix</span></span>
+<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a>cor_matrix <span class="ot">&lt;-</span> <span class="fu">cor</span>(merged_data[,<span class="dv">2</span><span class="sc">:</span><span class="fu">ncol</span>(merged_data)])</span>
+<span id="cb44-3"><a href="#cb44-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-4"><a href="#cb44-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot correlation matrix</span></span>
+<span id="cb44-5"><a href="#cb44-5" aria-hidden="true" tabindex="-1"></a><span class="fu">corrplot</span>(cor_matrix, <span class="at">method=</span><span class="st">"circle"</span>)</span>
+<span id="cb44-6"><a href="#cb44-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-7"><a href="#cb44-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-8"><a href="#cb44-8" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="Mini-Group-Project-1-Team-X_files/figure-html/unnamed-chunk-14-1.png" class="img-fluid" width="672"></p>
+</div>
+<div class="sourceCode cell-code" id="cb45"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Scatter plot of actual EPS value vs. average analyst experience</span></span>
+<span id="cb45-2"><a href="#cb45-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(NFLX3, <span class="fu">aes</span>(<span class="at">x =</span> avg_experience, <span class="at">y =</span> avg_actual)) <span class="sc">+</span></span>
+<span id="cb45-3"><a href="#cb45-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb45-4"><a href="#cb45-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xlab</span>(<span class="st">"Average Analyst Experience"</span>) <span class="sc">+</span></span>
+<span id="cb45-5"><a href="#cb45-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylab</span>(<span class="st">"Actual EPS Value"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="Mini-Group-Project-1-Team-X_files/figure-html/unnamed-chunk-14-2.png" class="img-fluid" width="672"></p>
+</div>
+<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Scatter plot of actual EPS value vs. average analyst past accuracy</span></span>
+<span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(NFLX3, <span class="fu">aes</span>(<span class="at">x =</span> avg_past_accuracy, <span class="at">y =</span> avg_actual)) <span class="sc">+</span></span>
+<span id="cb46-3"><a href="#cb46-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb46-4"><a href="#cb46-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xlab</span>(<span class="st">"Average Analyst Past Accuracy"</span>) <span class="sc">+</span></span>
+<span id="cb46-5"><a href="#cb46-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylab</span>(<span class="st">"Actual EPS Value"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="Mini-Group-Project-1-Team-X_files/figure-html/unnamed-chunk-14-3.png" class="img-fluid" width="672"></p>
+</div>
+<div class="sourceCode cell-code" id="cb47"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Scatter plot of actual EPS value vs. average analyst size</span></span>
+<span id="cb47-2"><a href="#cb47-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(NFLX3, <span class="fu">aes</span>(<span class="at">x =</span> avg_size, <span class="at">y =</span> avg_actual)) <span class="sc">+</span></span>
+<span id="cb47-3"><a href="#cb47-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb47-4"><a href="#cb47-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xlab</span>(<span class="st">"Average Analyst Size"</span>) <span class="sc">+</span></span>
+<span id="cb47-5"><a href="#cb47-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylab</span>(<span class="st">"Actual EPS Value"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="Mini-Group-Project-1-Team-X_files/figure-html/unnamed-chunk-14-4.png" class="img-fluid" width="672"></p>
+</div>
+<div class="sourceCode cell-code" id="cb48"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Scatter plot of actual EPS value vs. average analyst horizon</span></span>
+<span id="cb48-2"><a href="#cb48-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(NFLX3, <span class="fu">aes</span>(<span class="at">x =</span> avg_horizon, <span class="at">y =</span> avg_actual)) <span class="sc">+</span></span>
+<span id="cb48-3"><a href="#cb48-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb48-4"><a href="#cb48-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xlab</span>(<span class="st">"Average Analyst Horizon"</span>) <span class="sc">+</span></span>
+<span id="cb48-5"><a href="#cb48-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylab</span>(<span class="st">"Actual EPS Value"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Don't know how to automatically pick scale for object of type &lt;difftime&gt;.
+Defaulting to continuous.</code></pre>
+</div>
+<div class="cell-output-display">
+<p><img src="Mini-Group-Project-1-Team-X_files/figure-html/unnamed-chunk-14-5.png" class="img-fluid" width="672"></p>
+</div>
+<div class="sourceCode cell-code" id="cb50"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Box plot of actual EPS value by year</span></span>
+<span id="cb50-2"><a href="#cb50-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(NFLX3, <span class="fu">aes</span>(<span class="at">x =</span> year, <span class="at">y =</span> avg_actual)) <span class="sc">+</span></span>
+<span id="cb50-3"><a href="#cb50-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>() <span class="sc">+</span></span>
+<span id="cb50-4"><a href="#cb50-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xlab</span>(<span class="st">"Year"</span>) <span class="sc">+</span></span>
+<span id="cb50-5"><a href="#cb50-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylab</span>(<span class="st">"Actual EPS Value"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Continuous x aesthetic
+ℹ did you forget `aes(group = ...)`?</code></pre>
+</div>
+<div class="cell-output-display">
+<p><img src="Mini-Group-Project-1-Team-X_files/figure-html/unnamed-chunk-14-6.png" class="img-fluid" width="672"></p>
+</div>
+<div class="sourceCode cell-code" id="cb52"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Histogram of average analyst experience</span></span>
+<span id="cb52-2"><a href="#cb52-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(NFLX3, <span class="fu">aes</span>(<span class="at">x =</span> avg_experience)) <span class="sc">+</span></span>
+<span id="cb52-3"><a href="#cb52-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>(<span class="at">binwidth =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb52-4"><a href="#cb52-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xlab</span>(<span class="st">"Average Analyst Experience"</span>) <span class="sc">+</span></span>
+<span id="cb52-5"><a href="#cb52-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylab</span>(<span class="st">"Frequency"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="Mini-Group-Project-1-Team-X_files/figure-html/unnamed-chunk-14-7.png" class="img-fluid" width="672"></p>
+</div>
+<div class="sourceCode cell-code" id="cb53"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Histogram of average analyst past accuracy</span></span>
+<span id="cb53-2"><a href="#cb53-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(NFLX3, <span class="fu">aes</span>(<span class="at">x =</span> avg_past_accuracy)) <span class="sc">+</span></span>
+<span id="cb53-3"><a href="#cb53-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>(<span class="at">binwidth =</span> <span class="fl">0.1</span>) <span class="sc">+</span></span>
+<span id="cb53-4"><a href="#cb53-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xlab</span>(<span class="st">"Average Analyst Past Accuracy"</span>) <span class="sc">+</span></span>
+<span id="cb53-5"><a href="#cb53-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylab</span>(<span class="st">"Frequency"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="Mini-Group-Project-1-Team-X_files/figure-html/unnamed-chunk-14-8.png" class="img-fluid" width="672"></p>
+</div>
+<div class="sourceCode cell-code" id="cb54"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Histogram of average analyst size</span></span>
+<span id="cb54-2"><a href="#cb54-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(NFLX3, <span class="fu">aes</span>(<span class="at">x =</span> avg_size)) <span class="sc">+</span></span>
+<span id="cb54-3"><a href="#cb54-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>(<span class="at">binwidth =</span> .<span class="dv">01</span>) <span class="sc">+</span></span>
+<span id="cb54-4"><a href="#cb54-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xlab</span>(<span class="st">"Average Analyst Size"</span>) <span class="sc">+</span></span>
+<span id="cb54-5"><a href="#cb54-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylab</span>(<span class="st">"Frequency"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="Mini-Group-Project-1-Team-X_files/figure-html/unnamed-chunk-14-9.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
